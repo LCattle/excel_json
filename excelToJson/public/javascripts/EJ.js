@@ -119,7 +119,11 @@ var EJ = {
     },
     jsonWriteFile: function (data) {
         fs.writeFile('provinces.json', JSON.stringify(data), function (err) {
-            if (err) throw err;
+            if (err){
+                console.log('写入文件错误!----------------')
+                console.log('错误如下:')
+                throw err;
+            }
             console.log('写入完成');
         });
 
