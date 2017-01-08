@@ -15,7 +15,7 @@
     "serve-favicon": "~2.3.0"
   },
   "devDependencies": {
-    "fs": "^0.0.1-security",
+    "fs": "0.0.1-security",
     "jQuery": "^1.7.4",
     "jsdom": "^9.9.1",
     "xlsx": "^0.8.1"

@@ -6,7 +6,7 @@ var EJ = require('../public/javascripts/EJ')
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-    var excelFileUrl = process.cwd() + '\\public\\javascripts\\test.xlsx';
+    var excelFileUrl = process.cwd() + '\\public\\data\\test.xlsx';
     console.log(excelFileUrl)
     EJ.getExcelData(excelFileUrl);
     res.render('index', { title: 'Excel To Json'});
